@@ -2,6 +2,7 @@
   "expo": {
     "name": "BirthdayCountdown",
     "slug": "BirthdayCountdown",
+    "description": "This App shows you how long it is until Sergei's next birthday",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
@@ -10,7 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/birthday.jpg",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
