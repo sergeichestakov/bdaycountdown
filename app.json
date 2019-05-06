@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "countdownTo21",
-    "slug": "countdownTo21",
+    "name": "BirthdayCountdown",
+    "slug": "BirthdayCountdown",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
