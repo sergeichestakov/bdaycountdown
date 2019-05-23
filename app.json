@@ -2,7 +2,7 @@
   "expo": {
     "name": "BirthdayCountdown",
     "slug": "BirthdayCountdown",
-    "description": "This App shows you how long it is until Sergei's next birthday",
+    "description": "This app shows you how long it will be until Sergei's next birthday",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
