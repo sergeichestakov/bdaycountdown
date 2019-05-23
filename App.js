@@ -2,18 +2,22 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import CountDown from 'react-native-countdown-component';
 
-// May 10th
-const SERGEIS_BIRTHDAY = new Date(2019, 4, 10);
+const MAY = 4;
+const TENTH = 10;
 
 export default class App extends React.Component {
   render() {
     const now = new Date();
-    const seconds_left = Math.floor((SERGEIS_BIRTHDAY - (now))/1000);
+    const currYear = now.getFullYear();
+    const afterBday = now.getMonth() > MAY || (now.getMonth() == MAY && now.getDate() > TENTH);
+
+    const nextBday = new Date(afterBday ? currYear + 1 : currYear, MAY, TENTH);
+    const secondsLeft = Math.floor((nextBday - (now))/1000);
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Time until Sergei's 21st Birthday</Text>
         <CountDown
-          until={seconds_left}
+          until={secondsLeft}
           onFinish={() => alert('Time to turn up!')}
           size={30}
         />
